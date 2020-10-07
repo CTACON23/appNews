@@ -9,6 +9,7 @@ app.use(express.json({extended:true}))
 app.use('/user',require('./routes/user.routes'))
 app.use('/admin',require('./routes/admin.routes'))
 app.use('/auth',require('./routes/auth.routes'))
+app.use('/post',require('./routes/post.routes'))
 
 async function start(){
     try {
